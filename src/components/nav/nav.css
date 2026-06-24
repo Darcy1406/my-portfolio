@@ -1,0 +1,25 @@
+
+
+.container-bars-menu{
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+@media screen and (max-width:768px) {
+    .container-bars-menu{
+        display: block;
+    }
+
+    .container-navigation ul {
+        text-align: center;
+        /* margin-top: 5px; */
+    }
+    .container-navigation ul li{
+        display: none;
+    }
+    .container-navigation ul li.active{
+        display: block;
+    }
+}

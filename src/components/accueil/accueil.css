@@ -1,0 +1,50 @@
+@media screen and (max-width:1074px) {
+    #accueil .bloc-accueil .bloc-description{
+        margin: 15px 0;
+    }
+
+    #accueil .bloc-accueil .bloc-description strong{
+        text-align: center;
+    }
+
+    #accueil .bloc-accueil .bloc-description p{
+        text-align: center;
+    }
+
+    #accueil .bloc-accueil .bloc-description p:last-child{
+        margin: 0 auto;
+        width: 67%;
+    }
+
+}
+
+
+@media screen and (max-width:475px) {
+    #accueil .bloc-accueil .container-img{
+        min-width: 310px;
+    }
+    #accueil .bloc-accueil .container-img .box-img{
+        width: 300px;
+        height: 300px;
+    }
+}
+
+
+@media screen and (max-width:475px) {
+
+    #accueil .bloc-accueil .bloc-description strong{
+        font-size: 32px;
+    }
+
+    #accueil .bloc-accueil .bloc-description p{
+        font-size: 17px;
+    }
+
+    #accueil .bloc-accueil .bloc-description button{
+        font-size: 13px;
+    }
+
+    #accueil .bloc-contact ul li{
+        font-size: 16px;
+    }
+}
