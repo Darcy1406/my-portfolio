@@ -35,15 +35,15 @@ function App() {
                     </p>
 
                     <div className='container-btn w-[85%] min-w-[250px] my-4 flex gap-4 flex-wrap items-center max-sm:text-sm'>
-                      <button className='uppercase py-2 px-4 rounded-sm cursor-pointer' style={{background: "#00D4FF"}}>
+                      <a href='#projets' className='uppercase py-2 px-4 rounded-sm cursor-pointer' style={{background: "#00D4FF"}}>
                         Explorer mes projets
                         <span className="icon mx-2">
                           <i className="fas fa-arrow-right"></i>
                         </span>
-                      </button>
-                      <button className='inbline-block uppercase py-2 px-4 rounded-sm cursor-pointer' style={{color: '#00D4FF', border: '1px solid #00D4FF'}}>
+                      </a>
+                      <a href='#competences' className='inbline-block uppercase py-2 px-4 rounded-sm cursor-pointer' style={{color: '#00D4FF', border: '1px solid #00D4FF'}}>
                         Voir mes compétences
-                      </button>
+                      </a>
                     </div>
                 </div>
 
@@ -60,7 +60,7 @@ function App() {
 
                 </div>
 
-                <span className='text-5xl max-md:text-4xl p-[15px] text-white' style={{background: "#00D4FF", zIndex:2, position: 'absolute', bottom: '0', right: '20%', borderRadius: '9999px'}}>
+                <span className='text-5xl max-md:text-4xl p-[15px] text-white' style={{background: "#00D4FF", zIndex:2, position: 'absolute', bottom: '0', right: '15%', borderRadius: '9999px'}}>
                     <i className="fas fa-briefcase"></i>
                 </span>
 
@@ -70,6 +70,7 @@ function App() {
 
         {/* Partie 2 */}
         <div className='w-[80%] min-w-[310px] mx-auto pb-6'>
+
           {/* Compétences */}
           <div id="competences">
             <h3 className='text-2xl max-sm:text-xl my-4'>
@@ -147,7 +148,7 @@ function App() {
           </div>
 
           {/* Réalisations */}
-          <div className='my-[40px]'>
+          <div className='my-[40px]' id='projets'>
             <h3 className='text-2xl my-4'>
               <span className="icon mx-2 text-[#00D4FF]">
                 <i className="fab fa-creative-commons-sampling-plus"></i>
