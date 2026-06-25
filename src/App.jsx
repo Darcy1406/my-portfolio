@@ -22,51 +22,48 @@ function App() {
       <section id='portfolio' className='App min-h-screen text-[#DBE9FB]' style={{backgroundColor: '#051525'}}>
 
         {/* Partie 1 */}
-        <div className='bloc-accueil flex items-center justify-center gap-4 flex-wrap h-screen'>
+        <div className='bloc-accueil flex items-center justify-center gap-4 flex-wrap min-h-screen'>
 
             {/* Description */}
-            <div className='bloc-description px-4 w-[50%]'>
+            <div className='bloc-description px-4 w-[50%] min-w-[300px]'>
 
-                <div>
-                    <h1 className='text-5xl max-xl:text-4xl'>Concevoir l'avenir des <strong style={{color: "#00D4FF"}}>architectures évolutives.</strong></h1>
+                <div className='max-md:mt-[20px]'>
+                    <h1 className='text-5xl max-xl:text-4xl max-lg:text-3xl max-sm:text-2xl'>Concevoir l'avenir des <strong style={{color: "#00D4FF"}}>architectures évolutives.</strong></h1>
 
-                    <p className='my-2 max-sm:text-lg w-[]'>
+                    <p className='my-2 max-sm:text-sm'>
                       Je m'appelle MILAMANA Darcy. Je me spécialise dans la construction de systèmes distribués haute performance et d'interfaces frontend immersives alliant précision technique et créativité.
                     </p>
 
-                    <div className='container-btn inline-block my-4'>
-                      <button className='mr-4 uppercase py-2 px-4 rounded-sm cursor-pointer' style={{background: "#00D4FF"}}>
+                    <div className='container-btn w-[85%] min-w-[250px] my-4 flex gap-4 flex-wrap items-center max-sm:text-sm'>
+                      <button className='uppercase py-2 px-4 rounded-sm cursor-pointer' style={{background: "#00D4FF"}}>
                         Explorer mes projets
                         <span className="icon mx-2">
                           <i className="fas fa-arrow-right"></i>
                         </span>
                       </button>
-                      <button className='ml-4 uppercase py-2 px-4 rounded-sm cursor-pointer' style={{color: '#00D4FF', border: '1px solid #00D4FF'}}>
+                      <button className='inbline-block uppercase py-2 px-4 rounded-sm cursor-pointer' style={{color: '#00D4FF', border: '1px solid #00D4FF'}}>
                         Voir mes compétences
                       </button>
                     </div>
-
-                    {/* <p className='text-xl my-2 max-sm:text-lg'>Je suis un développeur web <span className='underline text-blue-500 font-semibold'>fullstack.</span></p>
-
-                    <p className='text-xl w-[90%] min-w-[310px] max-sm:text-lg'>Grâce à <span className='font-bold'>React.js</span>, je peux créer des interfaces utilisateurs propres et intuitives. Puis les donner vie à l'aide de <span className='font-bold'>Django</span>, en arrière plan.</p> */}
                 </div>
 
               
             </div>
 
             {/* Image */}
-            <div className='container-img w-1/3 ml-2 min-w-[400px] flex items-center justify-center relative'>
+            <div className='w-auto relative container-img ml-2'>
 
-                <div className='box-img w-[400px] h-[400px] bg-green-200' style={{border: "4px solid #00D4FF", overflow: 'hidden', borderRadius: '9999px'}}>
+                <div className='box-img w-[450px] max-lg:w-[350px] max-sm:w-[300px] h-[450px] max-lg:h-[350px] max-sm:h-[300px]' style={{border: "4px solid #00D4FF", overflow: 'hidden', borderRadius: '9999px'}}>
 
                     <img src="./images/Photo.png" alt="Photo d'identité" style={{width: '100%', marginTop: '-50px'}}/>
 
 
                 </div>
 
-                <span className='icon text-5xl bg-blue-500 p-4 text-white' style={{background: "#00D4FF", zIndex:2, position: 'absolute', bottom: '0', right: '20%', borderRadius: '9999px'}}>
+                <span className='text-5xl max-md:text-4xl p-[15px] text-white' style={{background: "#00D4FF", zIndex:2, position: 'absolute', bottom: '0', right: '20%', borderRadius: '9999px'}}>
                     <i className="fas fa-briefcase"></i>
                 </span>
+
             </div>
 
         </div>
@@ -75,7 +72,7 @@ function App() {
         <div className='w-[80%] min-w-[310px] mx-auto pb-6'>
           {/* Compétences */}
           <div id="competences">
-            <h3 className='text-2xl my-4'>
+            <h3 className='text-2xl max-sm:text-xl my-4'>
               <span className='icon mx-2' style={{color: '#00D4FF'}}>
                 <i className="fas fa-terminal"></i>
               </span>
@@ -137,7 +134,7 @@ function App() {
 
           {/* Parcours professionnel */}
           <div id='parcours' className='my-[40px]'>
-              <h3 className='text-2xl my-4'>
+              <h3 className='text-2xl max-sm:text-xl my-4'>
                 <span className="icon mx-2" style={{color: '#00D4FF'}}>
                   <i className="fas fa-briefcase"></i>
                 </span>
@@ -158,7 +155,7 @@ function App() {
               Réalisations
             </h3>
             
-            <div className="flex flex-wrap gap-4">
+            <div className="flex max-md:justify-center flex-wrap gap-4">
 
               <RealisationItem 
                 src_img={"./images/gestion-affectation.png"} 
@@ -182,17 +179,18 @@ function App() {
 
           </div>
 
-          <section id='contact' className='my-[80px] flex flex-wrap gap-4 py-10 px-[50px] bg-[#142131] rounded-sm shadow-lg border border-[#2E3A49]'>
+          <section id='contact' className='my-[80px] flex flex-wrap gap-4 py-10 sm:px-[50px] max-sm:px-2 bg-[#142131] rounded-sm shadow-lg border border-[#2E3A49]'>
 
             <div className='flex-1'>
               <h3 className='text-2xl font-semibold'>Collaborons ensemble.</h3>
-              <p className='w-[300px] my-4'>
+              <p className='sm:w-[50%] min-w-[150px] my-4 text-sm'>
                   Prêt à concevoir la prochaine génération d'infrastructure numérique ? Envoyez-moi un message ou retrouvez-moi sur les réseaux sociaux.
               </p>
             </div>
 
-            <div className='w-[55%]'>
+            <div className='w-[65%] min-w-[300px]'>
                 <p className='uppercase text-xl text-[#A2E0F7]'>Réseaux & connexions</p>
+
                 <div className='flex flex-wrap gap-4 my-6'>
 
                   <div className='w-[290px] p-4 flex gap-4 items-center border border-[#2E3A49] rounded-md'>
