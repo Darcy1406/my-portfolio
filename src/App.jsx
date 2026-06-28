@@ -81,55 +81,71 @@ function App() {
             </h3>
 
             <div className='flex gap-6 flex-wrap justify-center'>
-
-                <div className='p-4 w-[300px] rounded-sm' style={{background: '#142333'}}>
-                  {/* Titre */}
-                  <div className='flex items-center'>
-                    <p className='uppercase text-sm flex-1'>Architecture fronted</p>
-                    <span className='icon'>
-                      <i className="fas fa-sitemap"></i>
-                    </span>
-                  </div>
-                  
-                  <CompetenceItem name={'React'} score={90} width={'w-[90%]'}/>
-                  <CompetenceItem name={'Tailwind CSS'} score={45} width={'w-[45%]'}/>
-                  <CompetenceItem name={'TypeScript'} score={25} width={'w-[25%]'}/>
-                  <CompetenceItem name={'JavaScript'} score={55} width={'w-[55%]'}/>
-                    
+              {/* Frontend */}
+              <div className='p-4 w-[280px] rounded-sm' style={{background: '#142333'}}>
+                {/* Titre */}
+                <div className='flex items-center'>
+                  <p className='uppercase text-sm flex-1'>Architecture fronted</p>
+                  <span className='icon'>
+                    <i className="fas fa-sitemap"></i>
+                  </span>
                 </div>
-                {/* Backend */}
-                <div className='p-4 w-[300px]' style={{background: '#142333'}}>
-                  {/* Titre */}
-                  <div className='flex items-center'>
-                    <p className='uppercase text-sm flex-1'>BACKEND</p>
-                    <span className='icon'>
-                      <i className="fas fa-sitemap"></i>
-                    </span>
-                  </div>
+                
+                <CompetenceItem name={'React'} score={90} width={'w-[90%]'}/>
+                <CompetenceItem name={'Tailwind CSS'} score={45} width={'w-[45%]'}/>
+                <CompetenceItem name={'TypeScript'} score={25} width={'w-[25%]'}/>
+                <CompetenceItem name={'JavaScript'} score={55} width={'w-[55%]'}/>
                   
-                  <CompetenceItem name={'Python'} score={75} width={'w-[75%]'}/>
-                  <CompetenceItem name={'Django'} score={85} width={'w-[85%]'}/>
-                  <CompetenceItem name={'PHP'} score={80} width={'w-[80%]'}/>
-                  <CompetenceItem name={'Symfony'} score={30} width={'w-[30%]'}/>
-                    
+              </div>
 
+              {/* Backend */}
+              <div className='p-4 w-[280px]' style={{background: '#142333'}}>
+                {/* Titre */}
+                <div className='flex items-center'>
+                  <p className='uppercase text-sm flex-1'>BACKEND</p>
+                  <span className='icon'>
+                    <i className="fas fa-server"></i>
+                  </span>
                 </div>
-                  {/* Base de données */}
-                <div className='p-4 w-[300px]' style={{background: '#142333'}}>
-                  {/* Titre */}
-                  <div className='flex items-center'>
-                    <p className='uppercase text-sm flex-1'>Base de données</p>
-                    <span className='icon'>
-                      <i className="fas fa-sitemap"></i>
-                    </span>
-                  </div>
+                
+                <CompetenceItem name={'Python'} score={75} width={'w-[75%]'}/>
+                <CompetenceItem name={'Django'} score={85} width={'w-[85%]'}/>
+                <CompetenceItem name={'PHP'} score={80} width={'w-[80%]'}/>
+                <CompetenceItem name={'Symfony'} score={30} width={'w-[30%]'}/>
                   
-                  <CompetenceItem name={'MySQL'} score={85} width={'w-[85%]'}/>
-                  <CompetenceItem name={'PostgreSQL'} score={80} width={'w-[80%]'}/>
-                  <CompetenceItem name={'Mongo DB'} score={40} width={'w-[40%]'}/>
-                  
+              </div>
+
+                {/* Base de données */}
+              <div className='p-4 w-[280px]' style={{background: '#142333'}}>
+                {/* Titre */}
+                <div className='flex items-center'>
+                  <p className='uppercase text-sm flex-1'>Base de données</p>
+                  <span className='icon'>
+                    <i className="fas fa-database"></i>
+                  </span>
+                </div>
+                
+                <CompetenceItem name={'MySQL'} score={85} width={'w-[85%]'}/>
+                <CompetenceItem name={'PostgreSQL'} score={80} width={'w-[80%]'}/>
+                <CompetenceItem name={'Mongo DB'} score={40} width={'w-[40%]'}/>
+                
+              </div>
+              
+              {/* Autres */}
+              <div className="p-4 w-[280px] bg-[#142333]">
+                <div className='flex items-center'>
+                  <p className='uppercase text-sm flex-1'>Autres</p>
+                  <span className='icon'>
+                    <i className="fas fa-industry"></i>
+                  </span>
                 </div>
 
+                <CompetenceItem name={"Conception de plans architecturaux"} score={98} width={"w-[98%]"}/>
+                <CompetenceItem name={"Analyse structurelle"} score={93} width={"w-[93%]"}/>
+                <CompetenceItem name={"Métré et devis estimatifs"} score={100} width={"w-[100%]"}/>
+                <CompetenceItem name={"Estimation des coûts de construction"} score={95} width={"w-[95%]"}/>
+
+              </div>
             </div>
           </div>
 
